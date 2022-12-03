@@ -57,19 +57,19 @@ class _CreateEntryState extends State<CreateEntry> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: GestureDetector(
-        onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
-        child: Scaffold(
-          appBar: AppBar(
-            title: Text(
-              widget.editMode == true
-                  ? 'Update entry'
-                  : 'Create entry',
-            ),
-            centerTitle: true,
+    return GestureDetector(
+      onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            widget.editMode == true
+                ? 'Update entry'
+                : 'Create entry',
           ),
-          body: SingleChildScrollView(
+          centerTitle: true,
+        ),
+        body: SafeArea(
+          child: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Form(
