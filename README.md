@@ -9,7 +9,11 @@ The second screen serves a dual purpose, enabling users to either create a new e
 
 Should a data entry exist, and the user chooses to delete it by clicking the delete icon, it will be permanently removed from the list. There is no recovery option within this sample application.
 
-Used packages: [hive_flutter](https://pub.dev/packages/hive) & [hive_generator](https://pub.dev/packages/hive_generator)
+Used packages: 
+  - [hive](https://pub.dev/packages/hive)
+  - [hive_flutter](https://pub.dev/packages/hive_flutter)
+  - [build_runner](https://pub.dev/packages/build_runner)
+  - [hive_generator](https://pub.dev/packages/hive_generator)
 
 ## Preview
 ![alt text](https://i.postimg.cc/kD3wfhR3/imgonline-com-ua-twotoone-Q5-ASov8sqv-QD.png "img")
